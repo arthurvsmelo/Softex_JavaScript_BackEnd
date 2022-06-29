@@ -1,0 +1,14 @@
+Aluno: Arthur Victor dos Santos Melo
+
+Analisando a configuração das cadeiras após a chegada dos 11 alunos, percebemos
+que em cada fileira, tanto pela vertical como pela horizontal, há exatamente 2 
+cadeiras ocupadas por alunos que gostam de uma disciplina e as demais cadeiras 
+da mesma fileira ocupadas pelos alunos que gostam da outra disciplina.
+
+Sendo assim, após a troca, o professor percebeu que havia uma fileira com 3 
+cadeiras ocupadas por alunos que gostam da mesma disciplina, o que o levou a 
+perceber a cadeira que houve a troca cruzando a fila horizontal e vertical que
+estava nessa configuração.
+
+O aluno que saiu da cadeira gosta de Matemática e o aluno que entrou na cadeira
+gosta de Português.
