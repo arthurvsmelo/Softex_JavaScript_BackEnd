@@ -1,0 +1,19 @@
+Aluno: Arthur Victor dos Santos Melo
+
+Aristóteles (A)
+Sócrates    (S)
+Platão      (P)
+
+|===== Química ======|
+|     1º  2º  3º     |
+|     S   A   P      |
+|                    |
+|====== Física ======|
+|     1º  2º  3º     |
+|     A   P   S      |
+|                    |
+|==== Matemática ====|
+|     1º  2º  3º     |
+|     P   S   A      |
+|                    |
+|====================|
