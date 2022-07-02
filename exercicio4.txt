@@ -1,0 +1,43 @@
+nome     caracter
+endereco caracter
+cidade   caracter
+cpf      inteiro
+rg       inteiro
+idade    inteiro
+pai      caracter
+mae      caracter
+peso     real
+renda    real
+
+escreva("Cadastro")
+escreva("Nome:")
+leia(nome)
+escreva("Endereço:")
+leia(endereco)
+escreva("Cidade:")
+leia(cidade)
+escreva("CPF:")
+leia(cpf)
+escreva("RG:")
+leia(rg)
+escreva("Idade:")
+leia(idade)
+escreva("Nome do pai:")
+leia(pai)
+escreva("Nome da mãe:")
+leia(mae)
+escreva("Peso:")
+leia(peso)
+escreva("Renda bruta:")
+leia(renda)
+
+escreva("Nome: ", nome)
+escreva("Endereço: ", endereco)
+escreva("Cidade: ", cidade)
+escreva("CPF: ", cpf)
+escreva("RG: ", rg)
+escreva("Nome do pai: ", pai)
+escreva("Nome da mãe: ", mae)
+escreva("Peso: ", peso)
+escreva("Renda bruta: ", renda)
+
