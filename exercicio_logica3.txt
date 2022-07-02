@@ -1,0 +1,31 @@
+Os dados da inscrição devem ser dos seguintes tipos:
+
+Nome: tipo caracter
+CPF: tipo inteiro
+RG: tipo inteiro
+Altura: tipo real
+Endereço: vamos dividir em 5 variáveis, sendo: Rua -  tipo caracter, Número - tipo inteiro, Bairro - tipo caracter, Cidade - tipo caracter e Estado - tipo caracter
+
+declaração:
+
+nome     caracter
+cpf      inteiro
+rg       inteiro
+altura   real
+rua      caracter
+numero   inteiro
+bairro   caracter
+cidade   caracter
+estado   caracter
+
+
+nome   <- José Almeida da Silva
+cpf    <- 12345678900
+rg     <- 9517530
+altura <- 1.78
+rua    <- A
+numero <- 380
+bairro <- Centro
+cidade <- Recife
+estado <- PE
+
