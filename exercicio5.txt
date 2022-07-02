@@ -1,0 +1,71 @@
+escreva("É terrestre?")
+SE ("sim"):
+    escreva(Tem duas rodas?")
+    SE ("sim"):
+        escreva("Tem motor?")
+        SE ("sim"):
+            escreva("Então, o transporte escolhido foi Moto.")
+        SENAO:
+            escreva("Então, o transporte escolhido foi Bicicleta.")
+        FIMSE
+    SENAO:
+        escreva("É comprido?")
+        SE ("sim"):
+            escreva("Anda sobre trilhos?")
+            SE ("sim"):
+                escreva("Então, o transporte escolhido foi Trem.")
+            SENAO:
+                escreva("Leva cargas?")
+                SE ("sim"):
+                    escreva("Então, o transporte escolhido foi Caminhão.")
+                SENAO:
+                    escreva("Então, o transporte escolhido foi Onibus.")
+                FIMSE
+            FIMSE
+        SENAO:
+            escreva("Leva mais de dois passageiros?")
+            SE ("sim")
+                escreva("Então, o transporte escolhido foi Carro.")
+            SENAO:
+                escreva("Então, o transporte escolhido foi Trator.")
+            FIMSE
+        FIMSE
+    FIMSE
+SENAO:
+    escreva("Voa?")
+    SE ("sim"):
+        escreva("Tem motor?")
+            SE ("sim"):
+                escreva("Tem asa?")
+                SE ("sim"):
+                    escreva("Então, o transporte escolhido foi Avião.")
+                SENAO:
+                    escreva("Então, o transporte escolhido foi Helicóptero.")
+                FIMSE
+            SENAO:
+                escreva("Cabe apenas uma pessoa?")
+                SE ("sim"):
+                    escreva("Então, o transporte escolhido foi Paraquedas.")
+                SENAO:
+                    escreva("Então, o transporte escolhido foi Balão.")
+                FIMSE
+            FIMSE
+    SENAO:
+        escreva("Submerge?")
+        SE ("sim"):
+            escreva("Então, o transporte escolhido foi Submarino.")
+        SENAO:
+            escreva("É muito grande?")
+                SE ("sim"):
+                    escreva("Então, o transporte escolhido foi Navio.")
+                SENAO:
+                    escreva("Tem motor?")
+                        SE ("sim"):
+                            escreva("Então, o transporte escolhido foi Lancha.")
+                        SENAO:
+                            escreva("Então, o transporte escolhido foi Barco.")
+                        FIMSE
+                FIMSE
+        FIMSE
+    FIMSE
+FIMSE
