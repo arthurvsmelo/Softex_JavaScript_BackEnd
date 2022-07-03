@@ -1,71 +1,86 @@
-escreva("… terrestre?")
-SE ("sim"):
-    escreva(Tem duas rodas?")
-    SE ("sim"):
-        escreva("Tem motor?")
-        SE ("sim"):
-            escreva("Ent„o, o transporte escolhido foi Moto.")
-        SENAO:
-            escreva("Ent„o, o transporte escolhido foi Bicicleta.")
-        FIMSE
-    SENAO:
-        escreva("… comprido?")
-        SE ("sim"):
-            escreva("Anda sobre trilhos?")
-            SE ("sim"):
-                escreva("Ent„o, o transporte escolhido foi Trem.")
-            SENAO:
-                escreva("Leva cargas?")
-                SE ("sim"):
-                    escreva("Ent„o, o transporte escolhido foi Caminh„o.")
-                SENAO:
-                    escreva("Ent„o, o transporte escolhido foi Onibus.")
-                FIMSE
-            FIMSE
-        SENAO:
-            escreva("Leva mais de dois passageiros?")
+escreva("√â terrestre?")
+SE ("sim")
+    escreva("Cabe apenas uma pessoa?")
+    SE ("sim")
+        escreva("√â pesado?")
+        SE ("sim")
+            escreva("Ent√£o, o transporte escolhido foi Trator.")
+        SENAO
+            escreva("Usa capacete?")
             SE ("sim")
-                escreva("Ent„o, o transporte escolhido foi Carro.")
-            SENAO:
-                escreva("Ent„o, o transporte escolhido foi Trator.")
+                escreva("Ent√£o, o transporte escolhido foi Moto.")
+            SENAO
+                escreva("Ent√£o, o transporte escolhido foi Bicicleta.")
+            FIMSE
+        FIMSE
+    SENAO
+        escreva("Tem passageiro?")
+        SE ("sim")
+            escreva("Usa trilho?")
+            SE ("sim")
+                escreva("Ent√£o, o transporte escolhido foi Trem.")
+            SENAO
+                escreva("√â ve√≠culo leve?")
+                SE ("sim")
+                    escreva("Ent√£o, o transporte escolhido foi Carro.")
+                SENAO
+                    escreva("Usa carroceria?")
+                    SE ("sim")
+                        escreva("Ent√£o, o transporte escolhido foi Caminh√£o.")
+                    SENAO
+                        escreva("Ent√£o, o transporte escolhido foi √înibus.")
+                    FIMSE
+                FIMSE
             FIMSE
         FIMSE
     FIMSE
-SENAO:
-    escreva("Voa?")
-    SE ("sim"):
-        escreva("Tem motor?")
-            SE ("sim"):
-                escreva("Tem asa?")
-                SE ("sim"):
-                    escreva("Ent„o, o transporte escolhido foi Avi„o.")
-                SENAO:
-                    escreva("Ent„o, o transporte escolhido foi HelicÛptero.")
+SENAO
+    escreva("√â a√©reo?")
+    SE ("sim")
+        escreva("Viaja dentro?")
+        SE ("sim")
+            escreva("Tem piloto?")
+            SE ("sim")
+                escreva("Possui asas fixas?")
+                SE ("sim")
+                    escreva("Ent√£o, o transporte escolhido foi Avi√£o.")
+                SENAO
+                    escreva("Ent√£o, o transporte escolhido foi Helic√≥ptero.")
                 FIMSE
-            SENAO:
-                escreva("Cabe apenas uma pessoa?")
-                SE ("sim"):
-                    escreva("Ent„o, o transporte escolhido foi Paraquedas.")
-                SENAO:
-                    escreva("Ent„o, o transporte escolhido foi Bal„o.")
+            SENAO
+                escreva("Ent√£o, o transporte escolhido foi Bal√£o.")
+            FIMSE
+        SENAO
+            escreva("Precisa pular?")
+            SE ("sim")
+                escreva("Ent√£o, o transporte escolhido foi Paraquedas.")
+            FIMSE
+        FIMSE
+    SENAO
+        escreva("√â aqu√°tico?")
+        SE ("sim")
+            escreva("Navega na √°gua?")
+            SE ("sim")
+                escreva("Tem motor?")
+                SE ("sim")
+                    escreva("√â alto?")
+                    SE ("sim")
+                        escreva("Ent√£o, o transporte escolhido foi Navio.")
+                    SENAO
+                        escreva("Ent√£o, o transporte escolhido foi Lancha.")
+                    FIMSE
+                SENAO
+                    escreva("Possui vela?")
+                    SE ("sim")
+                        escreva("Ent√£o, o transporte escolhido foi Barco.")
+                    FIMSE
+                FIMSE
+            SENAO
+                escreva("√â coberto de √°gua?")
+                SE ("sim")
+                    escreva("Ent√£o, o transporte escolhido foi Submarino.")
                 FIMSE
             FIMSE
-    SENAO:
-        escreva("Submerge?")
-        SE ("sim"):
-            escreva("Ent„o, o transporte escolhido foi Submarino.")
-        SENAO:
-            escreva("… muito grande?")
-                SE ("sim"):
-                    escreva("Ent„o, o transporte escolhido foi Navio.")
-                SENAO:
-                    escreva("Tem motor?")
-                        SE ("sim"):
-                            escreva("Ent„o, o transporte escolhido foi Lancha.")
-                        SENAO:
-                            escreva("Ent„o, o transporte escolhido foi Barco.")
-                        FIMSE
-                FIMSE
         FIMSE
     FIMSE
 FIMSE
