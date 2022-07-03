@@ -1,0 +1,128 @@
+nota         real
+maior_nota   real
+maior_A      real
+maior_B      real
+maior_C      real
+maior_D      real
+aprovados    real
+aprovados_A  real
+aprovados_B  real
+aprovados_C  real
+aprovados_D  real
+i            inteiro
+nome         caracter
+melhor_aluno caracter
+alunoA       caracter
+alunoB       caracter
+alunoC       caracter
+alunoD       caracter
+turma        caracter
+
+maior_nota <- 0
+maior_A <- 0
+maior_B <- 0
+maior_C <- 0
+maior_D <- 0
+aprovados <- 0
+aprovados_A <- 0
+aprovados_B <- 0
+aprovados_C <- 0
+aprovados_D <- 0
+
+
+
+escreva("Insira os dados da turma A: ")
+para i <- 0 ate i < 25 passo i <- i + 1 faca
+    escreva("Digite o nome do Aluno: ")
+    leia(nome)
+    escreva("Digite a nota: ")
+    leia(nota)
+    se (nota > maior_nota) entao
+        maior_nota <- nota
+        melhor_aluno <- nome
+        turma <- "A"
+    fimse
+    se (nota > maior_A) entao
+        maior_A <- nota
+        alunoA <- nome
+    fimse
+    se (nota >= 7) entao
+        aprovados_A <- aprovados_A + 1
+        aprovados <- aprovados + 1
+    fimse
+fimpara
+
+escreva("Insira os dados da turma B: ")
+para i <- 0 ate i < 25 passo i <- i + 1 faca
+    escreva("Digite o nome do Aluno: ")
+    leia(nome)
+    escreva("Digite a nota: ")
+    leia(nota)
+    se (nota > maior_nota) entao
+        maior_nota <- nota
+        melhor_aluno <- nome
+        turma <- "B"
+    fimse
+    se (nota > maior_B) entao
+        maior_B <- nota
+        alunoB <- nome
+    fimse
+    se (nota >= 7) entao
+        aprovados_B <- aprovados_B + 1
+        aprovados <- aprovados + 1
+    fimse
+fimpara
+
+escreva("Insira os dados da turma C: ")
+para i <- 0 ate i < 25 passo i <- i + 1 faca
+    escreva("Digite o nome do Aluno: ")
+    leia(nome)
+    escreva("Digite a nota: ")
+    leia(nota)
+    se (nota > maior_nota) entao
+        maior_nota <- nota
+        melhor_aluno <- nome
+        turma <- "C"
+    fimse
+    se (nota > maior_C) entao
+        maior_C <- nota
+        alunoC <- nome
+    fimse
+    se (nota >= 7) entao
+        aprovados_C <- aprovados_C + 1
+        aprovados <- aprovados + 1
+    fimse
+fimpara
+
+escreva("Insira os dados da turma D: ")
+para i <- 0 ate i < 25 passo i <- i + 1 faca
+    escreva("Digite o nome do Aluno: ")
+    leia(nome)
+    escreva("Digite a nota: ")
+    leia(nota)
+    se (nota > maior_nota) entao
+        maior_nota <- nota
+        melhor_aluno <- nome
+        turma <- "D"
+    fimse
+    se (nota > maior_D) entao
+        maior_D <- nota
+        alunoD <- nome
+    fimse
+    se (nota >= 7) entao
+        aprovados_D <- aprovados_D + 1
+        aprovados <- aprovados + 1
+    fimse
+fimpara
+
+escreva("O total de alunos aprovados foi de ", aprovados)
+escreva("O total de aprovados na turma A foi de ", aprovados_A)
+escreva("A maior nota da turma A foi do aluno ", alunoA, "com nota ", maior_A)
+escreva("O total de aprovados na turma B foi de ", aprovados_B)
+escreva("A maior nota da turma B foi do aluno ", alunoB, "com nota ", maior_B)
+escreva("O total de aprovados na turma C foi de ", aprovados_C)
+escreva("A maior nota da turma C foi do aluno ", alunoC, "com nota ", maior_C)
+escreva("O total de aprovados na turma D foi de ", aprovados_D)
+escreva("A maior nota da turma D foi do aluno ", alunoD, "com nota ", maior_D)
+escreva("A maior nota geral foi do aluno ", melhor_aluno, "da turma ", turma, "com nota ", maior_nota)
+escreva("A maior nota geral foi do aluno ", melhor_aluno, "com nota ", maior_nota)
