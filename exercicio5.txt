@@ -1,12 +1,19 @@
+/* variavel de resposta */
+resposta caracter
+
 escreva("É terrestre?")
+leia(resposta)
 SE ("sim")
     escreva("Cabe apenas uma pessoa?")
+    leia(resposta)
     SE ("sim")
         escreva("É pesado?")
+        leia(resposta)
         SE ("sim")
             escreva("Então, o transporte escolhido foi Trator.")
         SENAO
             escreva("Usa capacete?")
+            leia(resposta)
             SE ("sim")
                 escreva("Então, o transporte escolhido foi Moto.")
             SENAO
@@ -15,16 +22,20 @@ SE ("sim")
         FIMSE
     SENAO
         escreva("Tem passageiro?")
+        leia(resposta)
         SE ("sim")
             escreva("Usa trilho?")
+            leia(resposta)
             SE ("sim")
                 escreva("Então, o transporte escolhido foi Trem.")
             SENAO
                 escreva("É veículo leve?")
+                leia(resposta)
                 SE ("sim")
                     escreva("Então, o transporte escolhido foi Carro.")
                 SENAO
                     escreva("Usa carroceria?")
+                    leia(resposta)
                     SE ("sim")
                         escreva("Então, o transporte escolhido foi Caminhão.")
                     SENAO
@@ -36,12 +47,16 @@ SE ("sim")
     FIMSE
 SENAO
     escreva("É aéreo?")
+    leia(resposta)
     SE ("sim")
         escreva("Viaja dentro?")
+        leia(resposta)
         SE ("sim")
             escreva("Tem piloto?")
+            leia(resposta)
             SE ("sim")
                 escreva("Possui asas fixas?")
+                leia(resposta)
                 SE ("sim")
                     escreva("Então, o transporte escolhido foi Avião.")
                 SENAO
@@ -52,18 +67,23 @@ SENAO
             FIMSE
         SENAO
             escreva("Precisa pular?")
+            leia(resposta)
             SE ("sim")
                 escreva("Então, o transporte escolhido foi Paraquedas.")
             FIMSE
         FIMSE
     SENAO
         escreva("É aquático?")
+        leia(resposta)
         SE ("sim")
             escreva("Navega na água?")
+            leia(resposta)
             SE ("sim")
                 escreva("Tem motor?")
+                leia(resposta)
                 SE ("sim")
                     escreva("É alto?")
+                    leia(resposta)
                     SE ("sim")
                         escreva("Então, o transporte escolhido foi Navio.")
                     SENAO
@@ -71,12 +91,14 @@ SENAO
                     FIMSE
                 SENAO
                     escreva("Possui vela?")
+                    leia(resposta)
                     SE ("sim")
                         escreva("Então, o transporte escolhido foi Barco.")
                     FIMSE
                 FIMSE
             SENAO
                 escreva("É coberto de água?")
+                leia(resposta)
                 SE ("sim")
                     escreva("Então, o transporte escolhido foi Submarino.")
                 FIMSE
