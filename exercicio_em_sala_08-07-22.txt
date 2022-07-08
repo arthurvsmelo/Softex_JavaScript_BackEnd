@@ -1,0 +1,25 @@
+real    altura
+real    peso
+real    imc
+
+altura = 0.0
+peso   = 0.0
+imc    = 0.0
+
+escreva("Digite sua altura: ")
+leia(altura)
+escreva("Digite seu peso: ")
+leia(peso)
+imc = (peso / (altura*altura))
+escreva("Seu imc é de: ", imc, "\n")
+se (imc < 18.5) {
+  escreva("Abaixo do peso normal.")
+}senao
+    {
+    se (imc < 25) {
+        escreva("Peso normal.")
+    }senao
+    {
+        escreva("Acima do peso normal.")
+    }
+}
