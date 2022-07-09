@@ -1,0 +1,72 @@
+// Código em portugol:
+
+Algoritmo "bubbleSort"
+// Disciplina  : [Lógica de Programação]
+// Aluno       : Arthur Victor
+// Descrição   : implementação do bubble sort
+// Data        : 09/07/2022
+Var
+i, j, aux: inteiro
+vec: vetor[1..10] de inteiro
+Inicio
+escreval("Metodo de ordenação BubbleSort.")
+
+// Leitura ds valores do vetor
+para i de 1 ate 10 passo 1 faca
+     escreva("Digite o valor de [",i," ]: ")
+     leia(vec[i])
+fimpara
+// Ordenação
+para i de 10 ate 1 passo -1 faca
+     para j de 1 ate i passo 1 faca
+          se(vec[j] > vec[j+1])entao
+             aux <- vec[j]
+             vec[j] <- vec[j+1]
+             vec[j+1] <- aux
+          fimse
+     fimpara
+fimpara
+
+// Exibir o vetor
+escreva("[")
+para i de 1 ate 10 passo 1 faca
+     escreva(vec[i],", ")
+fimpara
+escreva("]")
+
+Fimalgoritmo
+
+======================================================================================
+
+// Código em C:
+
+#include <stdio.h>
+
+int main()
+{
+    int vet[10] = {0}, i, j, aux;
+
+    printf("Metodo de ordenação BubbleSort.\n");
+    /* leitura dos valores do vetor */
+    for(i = 0; i < 10; i++)
+    {
+        printf("Digite o valor de [%d]\n", i+1);
+        scanf("%d", &vet[i]);
+    }
+    /* ordenação do vetor */
+    for(i = 9; i > -1; i--)
+        for(j = 0; j <= i; j++)
+            if(vet[j] > vet[j+1])
+                {
+                    aux = vet[j];
+                    vet[j] = vet[j+1];
+                    vet[j+1] = aux;
+                }
+    /* mostrar vetor ordenado */
+    printf("Vetor ordenado: [");
+    for(i = 0; i < 10; i++)
+        printf("%d ", vet[i]);
+    printf("]");
+
+    return 0;
+}
