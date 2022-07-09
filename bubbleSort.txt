@@ -17,9 +17,9 @@ para i de 1 ate 10 passo 1 faca
      leia(vec[i])
 fimpara
 // Ordenação
-para i de 10 ate 1 passo -1 faca
-     para j de 1 ate i passo 1 faca
-          se(vec[j] > vec[j+1])entao
+para i de 10 ate 1 passo -1 faca          // Aqui, o laço mais externo percorre o vetor do último elemento até o primeiro, garantindo que
+     para j de 1 ate i passo 1 faca       // todo o vetor seja ordenado. O laço mais interno faz as comparações dois a dois e faz as trocas.
+          se (vec[j] > vec[j+1]) entao
              aux <- vec[j]
              vec[j] <- vec[j+1]
              vec[j+1] <- aux
@@ -30,7 +30,7 @@ fimpara
 // Exibir o vetor
 escreva("[")
 para i de 1 ate 10 passo 1 faca
-     escreva(vec[i],", ")
+     escreva(vec[i]," ")
 fimpara
 escreva("]")
 
