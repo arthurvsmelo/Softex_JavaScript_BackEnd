@@ -1,0 +1,85 @@
+// Código em portugol
+
+Algoritmo "insertionSort"
+// Descrição   : Implementação do Insertion Sort
+// Autor       : Arthur Melo
+// Data atual  : 09/07/2022
+Var
+arr : vetor[1..30] de inteiro
+i, j, key : inteiro
+Inicio
+arr[1] <- 29
+arr[2] <- 15
+arr[3] <- 93
+arr[4] <- 87
+arr[5] <- 51
+arr[6] <- 9
+arr[7] <- 31
+arr[8] <- 13
+arr[9] <- 47
+arr[10] <- 49
+arr[11] <- 55
+arr[12] <- 71
+arr[13] <- 99
+arr[14] <- 65
+arr[15] <- 23
+arr[16] <- 7
+arr[17] <- 11
+arr[18] <- 25
+arr[19] <- 3
+arr[20] <- 63
+arr[21] <- 5
+arr[22] <- 79
+arr[23] <- 59
+arr[24] <- 17
+arr[25] <- 57
+arr[26] <- 77
+arr[27] <- 21
+arr[28] <- 45
+arr[29] <- 39
+arr[30] <- 7
+
+para i de 2 ate 30 passo 1 faca             // percorre o laço a partir da chave
+     key <- arr[i]                          // guarda o valor da chave
+     j <- i - 1                             // guarda o índice anterior à chave
+     enquanto j >= 1 e key < arr[j] faca    // esse laço percorre a lista em sentido contrário a partir do índice da chave até o início da lista
+              arr[j+1] <- arr[j]            // desloca os elementos maiores que a chave
+              j <- j - 1
+     fimenquanto
+     arr[j+1] <- key                        // realiza a troca inserindo a chave na posição correta
+fimpara
+
+para i de 1 ate 30 passo 1 faca             // imprime a lista ordenada
+     escreva(arr[i]," ")
+fimpara
+
+Fimalgoritmo
+
+===========================================================================================
+
+// Código em C
+
+#include <stdio.h>
+
+int main()
+{
+    int arr[30] = {29, 15, 93, 87, 51, 9, 31, 13, 47, 49,
+                   55, 71, 99,  65, 23, 7, 11, 25, 3, 63,
+                   5, 79, 59, 17, 63, 77, 21, 45, 39, 75};
+    int i, j, key;
+
+    for(i=1; i < 30; i++)                   /* percorre o laço a partir da chave */
+    {
+        key = arr[i];                       /* guarda o valor da chave           */                
+        j = i - 1;                          /* guarda o índice anterior à chave  */ 
+        while(j >= 0 && key < arr[j])       /* esse laço percorre a lista em sentido contrário a partir do índice da chave até o início da lista*/
+        {
+            arr[j+1] = arr[j];              /* desloca os elementos maiores que a chave */
+            j--;
+        }
+        arr[j+1] = key;                     /* realiza a troca inserindo a chave na posição correta */                    
+    }
+
+    for(i = 0; i < 30; i++)                 /* imprime a lista ordenada */
+        printf("%d ", arr[i]);
+}
