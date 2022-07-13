@@ -1,0 +1,7 @@
+Após pesquisa, encontrei dois usos de grafos na área de tecnologia:
+
+1 - Grafos são usados na implementação de algoritmos que resolvem o PROBLEMA DO MENOR CAMINHO, muito utilizado em aplicativos 
+de mapas e gps. Resolver este problema consiste em encontrar o caminho mais curto ou menos custoso de um vértice do grafo a outro.
+
+2 - Em redes sociais, as relações entre cada usuário com os demais pode ser representada por grafos, onde as areastas podem ou não
+ser direcionadas. 
