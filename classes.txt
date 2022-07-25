@@ -1,0 +1,63 @@
+#Classe material:
+Classe Cliente(nome, idade, cpf, sexo, id_cliente, endereco)
+	nome: Caractere
+	idade: Inteiro
+	cpf: Inteiro
+	sexo: Logico
+	id_cliente: Inteiro
+	endereco: caractere
+
+	Metodo AlterarIdade(nova_idade)
+		Cliente.idade = nova_idade
+	FimMetodo
+
+	Metodo AlterarEndereco(novo_endereco)
+		Cliente.endereco = novo_endereco
+	FimMetodo
+
+	Metodo AlterarID(novo_id)
+		Cliente.id_cliente = novo_id
+	FimMetodo
+
+#Classe abstrata:
+Classe Compras(cliente, qnt_itens, valor_total, entrega, desconto)
+	cliente: Cliente.id_cliente
+	qnt_itens: Inteiro
+	valor_total: Real
+	entrega: Logico
+	desconto: Real
+
+	Metodo AddItens(num_itens)
+		qnt_itens = qnt_itens + num_itens
+	FimMetodo
+
+	Metodo ValorTotal(valor)
+		valor_total = valor
+	FimMetodo
+
+	Metodo Entrega(opcao)
+		entrega = opcao
+	FimMetodo
+
+	Metodo Desconto(desc)
+		valor_total = valot_total - desc
+	FimMetodo
+
+#Instanciando os objetos:
+cliente_1 = Cliente("Paulo", 35, 123.456.789-89, 1, 0001, "Av Recife, 99")
+cliente_2 = Cliente("Lurdes", 23, 987.654.321-21, 0, 0002, "Av Norte, 1008")
+compra_1 = Compras(0001, 20, 3000.0, 0, 250.0)
+compra_2 = Compras(0002, 50, 9000.0, 1, 830.0)
+
+#Aplicando os métodos:
+cliente_1.AlterarIdade(36)
+cliente_1.AlterarEndereco("Av Recife, 199")
+compra_1.AddItens(20)
+compra_1.ValorTotal(6000.0)
+compra_1.Desconto(500.0)
+
+cliente_2.AlterarIdade(22)
+cliente_2.AlterarEndereco("Av Sul, 1008")
+compra_2.AddItens(25)
+compra_2.ValorTotal(13500.0)
+compra_2.Desconto(1245.0)
