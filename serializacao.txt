@@ -1,0 +1,50 @@
+package br.com.empresa.dados_contas;                                        
+
+public class Cliente{
+    public String nome;
+    public String endereco;
+    public Int telefone;
+}
+
+public class Banco{
+    public String nome_do_banco;
+    public Int agencia;
+    public Int conta;
+}
+
+package br.com.empresa.vendas;                                             
+
+public class Vendas{
+    br.com.empresa.dados_contas.Cliente novo_cliente = new br.com.empresa.dados_contas.Cliente()
+    br.com.empresa.dados_contas.Banco banco_cliente = new br.com.empresa.dados_contas.Banco()
+    public Float valor_venda;                                                                       
+    public Int qnt_venda;
+}
+
+novo_cliente = new Cliente()
+novo_cliente.nome = Joao da Silva
+novo_cliente.telefone = 81999565654
+novo_cliente.endereco = Rua dois, 1120
+
+novo_banco = new Banco()
+novo_banco.nome_do_banco = Santander
+novo_banco.agencia = 1000
+novo_banco.conta = 123456-7
+
+venda = new Vendas()                                        // instanciando um objeto
+venda.novo_cliente = novo_cliente
+venda.banco_cliente = novo_banco
+venda.valor_venda = 15000
+venda.qnt_venda = 500
+
+
+FileOutputStream arquivo = new FileOutputStream(C:\Users\user\Desktop\);      // serializando
+ObjectOutputStream objeto = new ObjectOutputStream(arquivo_serial.txt);
+objeto.writeObject(venda);
+objeto.close();
+
+FileInputStream arquivo = new FileInputStream(C:\Users\user\Desktop\);        // desserializando
+ObjectInputStream objeto = new ObjectInputStream(arquivo_serial.txt);
+objeto.readObject(venda);
+objeto.close();
+return venda;
