@@ -1,0 +1,22 @@
+package br.com.empresa.dados_contas;                                        // criado um pacote com duas classes
+
+public class Cliente{
+    public String nome;
+    public String endereco;
+    public Int telefone;
+}
+
+public class Banco{
+    public String nome_do_banco;
+    public Int agencia;
+    public Int conta;
+}
+
+package br.com.empresa.vendas;                                             // outro pacote que herda as duas classes do primeiro pacote
+
+public class vendas{
+    br.com.empresa.dados_contas.Cliente novo_cliente = new br.com.empresa.dados_contas.Cliente()
+    br.com.empresa.dados_contas.Banco banco_cliente = new br.com.empresa.dados_contas.Banco()
+    public Float valor_venda;                                                                       // novas classes do segundo pacote
+    public Int qnt_venda;
+}
