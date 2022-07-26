@@ -1,0 +1,21 @@
+Creational Design Pattern: Prototype
+
+Esse é um padrão de projeto de software criacional que permite a criação de novos objetos a partir de um modelo original,
+do qual é clonado.
+
+O padrão Prototype é aplicado quando existe a necessidade de clonar, literalmente, um objeto. Ou seja, quando a aplicação
+precisa criar cópias exatas de algum objeto em tempo de execução este padrão é altamente recomendado. 
+Este padrão pode ser utilizado em sistemas que precisam ser independentes da forma como os seus componentes são criados,
+compostos e representados.
+
+O padrão Prototype contém os seguintes elementos:
+
+    prototype          — uma classe que declara uma interface para objetos capazes de clonar a si mesmo;
+    prototype concreto — implementação de um prototype;
+    client             — cria um novo objeto através de um prototype que é capaz de clonar a si mesmo.
+
+Cada objeto é, ele próprio, um factory (Outro padrão de projeto) especializado em construir objetos iguais a si mesmo.
+O padrão Prototype é utilizado frequentemente em linguagens estaticamente tipadas como C++ e Java, e menos frequentemente 
+utilizadas em linguagens dinamicamente tipadas.
+
+O padrão Prototype exige a implementação de uma operação de clonagem em cada uma das classes concretas do protótipo.
