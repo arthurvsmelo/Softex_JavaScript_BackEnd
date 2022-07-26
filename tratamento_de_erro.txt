@@ -1,0 +1,12 @@
+public static void main (String[] args) {
+
+try {
+    String a = "Exemplo de string com tamanho 32";            // string com tamanho 32
+    char c = a.charAt(40);                                    // tentando acessar o caractere na posição 40 (não existe)
+    System.out.println(c);
+}
+catch(Exception excecao)) {
+    System.out.println("Ocorreu o erro: " + excecao.getMassage());      // mostra o erro de acesso a elemento nulo
+}
+System.out.println("Fim");
+}
